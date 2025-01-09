@@ -39,7 +39,36 @@ lon.TextColor3 = Color3.fromRGB(73, 49, 5)
 lon.Size = UDim2.new(1,0,1,0)
 repeat wait(1) until game:IsLoaded()
 
+- Create a function to create spam text
+local function createSpamText()
+    -- Create a ScreenGui
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "SpamGui"
+    screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
+    -- Create a TextLabel
+    local textLabel = Instance.new("TextLabel")
+    textLabel.Size = UDim2.new(1, 0, 1, 0) -- Full screen size
+    textLabel.BackgroundTransparency = 1 -- No background
+    textLabel.TextColor3 = Color3.fromRGB(255, 0, 0) -- Red text
+    textLabel.TextScaled = true -- Scale text to fit label
+    textLabel.Text = "Dit Me Cong San" -- Initial text
+    textLabel.Parent = screenGui
+
+    -- Function to update the text
+    local function updateText()
+        while true do
+            textLabel.Text = textLabel.Text .. " Dit Me Cong San!"
+            wait(0.5) -- Wait for half a second before updating text
+        end
+    end
+
+    -- Run the updateText function in a coroutine
+    coroutine.wrap(updateText)()
+end
+
+-- Call the function to create spam text
+createSpamText()
 
 local args2 = {
     [1] = "game rac lam ah em dung choi nua :cringe:",
