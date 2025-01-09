@@ -5,8 +5,8 @@ local lon = Instance.new('TextLabel')
 lon.Parent = cac
 lon.BackgroundTransparency = 1
 lon.TextSize = 30
-lon.Text = 'anh em adonis voi minh beo dep trai nhat thien tha vu tru luon day may em dit me ma y'
-lon.TextColor3 = Color3.fromRGB(82, 47, 7)
+lon.Text = 'Dit me Cong San Cho'
+lon.TextColor3 = Color3.fromRGB(255, 0, 0)
 lon.Size = UDim2.new(1,0,1,0)
 repeat wait(1) until game:IsLoaded()
 
